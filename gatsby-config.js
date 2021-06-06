@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: "Mainly Mobiles",
+    titleTemplate: "Mainly Mobiles · %s",
+    description: "Mobile phone sales and repair specialists.",
+    keywords: "mobiles, mobile repairs, lower north shore, sydney",
+    url: "https://mainlymobiles.com.au",
+    image: "/images/mmc.png",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
