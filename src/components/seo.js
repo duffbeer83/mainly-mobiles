@@ -4,6 +4,9 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 
+// this hot mess is taken from the gatsby documentation: https://www.gatsbyjs.com/docs/add-seo-component/
+// however when revisiting this solution seems much cleaner: https://github.com/jlengstorf/gatsby-theme-jason-blog/blob/master/src/components/SEO/SEO.js
+
 const SEO = ({ title, description, keywords, image, article }) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);

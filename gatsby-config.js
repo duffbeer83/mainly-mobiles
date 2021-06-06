@@ -21,5 +21,17 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Mainly Mobiles`,
+        short_name: `MMC`,
+        start_url: `/`,
+        background_color: `white`,
+        theme_color: `dimgray`,
+        display: `browser`,
+        icon: "src/images/mmc.png",
+      },
+    },
   ],
 };
