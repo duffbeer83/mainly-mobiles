@@ -1,0 +1,192 @@
+body {
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: dimgray;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Times New Roman";
+  font-weight: 450;
+  letter-spacing: normal;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Times New Roman";
+  font-weight: 400;
+  letter-spacing: normal;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: "Times New Roman";
+  font-weight: 250;
+  letter-spacing: normal;
+  font-size: 24px;
+}
+
+p {
+  font-size: 15px;
+}
+
+a {
+  color: dimgray;
+}
+
+/* 
+ * header 
+ */
+header {
+  padding: 20px;
+  background-color: lightgray;
+}
+
+/* in line now */
+/*
+header .logo {
+  display: inline;
+  float: left;
+  width: 180px;
+  height: 180px;
+}
+*/
+
+header .socialmedia {
+  float: right;
+  padding-top: 1.75em;
+}
+
+header h1 {
+  margin-left: 180px;
+  margin-right: 180px;
+  text-align: center;
+  color: #ed1c24;
+  font-size: 36px;
+}
+
+header .m {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  font-size: 48px;
+}
+
+header a {
+  padding: 0px;
+  text-decoration: none;
+}
+
+.resp-fb {
+  display: inline;
+}
+
+.resp-linkedin {
+  display: inline;
+}
+
+.resp-insta {
+  display: inline;
+}
+
+/* 
+ * nav 
+ */
+
+nav {
+  margin-left: 180px;
+  margin-right: 180px;
+  padding: 30px;
+  text-align: center;
+}
+
+nav a {
+  font-family: "Times New Roman";
+  text-decoration: none;
+  font-size: 24px;
+  text-align: left;
+  padding: 10px;
+  color: dimgray;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: #ed1c24;
+  text-decoration: underline;
+}
+
+/*
+ * Body Content (sections)
+ */
+.body-content {
+  padding-bottom: 30px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*
+ * footer
+ */
+footer {
+  font-size: 13px;
+  background-color: lightgray;
+  text-align: center;
+  padding: 4px;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer span {
+  color: dimgray;
+}
+
+/*
+ * Specials
+ */
+
+.map {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 600px !important;
+  max-height: 450px !important;
+}
+
+/* responsive: small desktop window and tablets */
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  header h1 {
+    margin-left: 180px;
+    margin-right: 0px;
+  }
+
+  nav {
+    margin-left: 180px;
+    margin-right: 0px;
+  }
+}
+
+/* responsive: mobiles iphone */
+@media screen and (max-width: 600px) {
+  header {
+    height: 120px;
+  }
+  header h1 {
+    display: none;
+  }
+  nav {
+    margin: 0px;
+    padding-top: 50px;
+  }
+}

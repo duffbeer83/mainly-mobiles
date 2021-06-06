@@ -6,8 +6,12 @@ const Navigation = () => {
 
   return (
     <nav>
-      <Link to="/">HOME</Link>
-      <Link to="/contact">CONTACT</Link>
+      <Link to="/" activeClassName="active">
+        HOME
+      </Link>
+      <Link to="/contact" activeClassName="active">
+        CONTACT
+      </Link>
     </nav>
   );
 };

@@ -2,11 +2,25 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
+const logoStyles = {
+  display: "inline",
+  float: "left",
+  width: "180px",
+  height: "180px",
+};
+
 const Header = () => {
   return (
     <header>
-      <Link class="logo" to="/">
-        <StaticImage src="../images/mmc.png" alt="Mainly Mobiles logo" />
+      <Link style={logoStyles} to="/">
+        <StaticImage
+          src="../images/mmc.png"
+          alt="Mainly Mobiles logo"
+          placeholder="none"
+          layout="fixed"
+          width={180}
+          height={180}
+        />
       </Link>
       <div class="socialmedia">
         <div class="resp-fb">
@@ -14,7 +28,11 @@ const Header = () => {
             href="https://www.facebook.com/MainlyMobiles/"
             target="_blank"
             rel="noreferrer">
-            <StaticImage src="../images/resp-fb.png" alt="Facebook logo" />
+            <StaticImage
+              src="../images/resp-fb.png"
+              alt="Facebook logo"
+              placeholder="none"
+            />
           </a>
         </div>
       </div>
