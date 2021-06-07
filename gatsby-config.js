@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: "Mainly Mobiles · %s",
     description: "Mobile phone sales and repair specialists.",
     keywords: "mobiles, mobile repairs, lower north shore, sydney",
-    url: "https://mainlymobiles.com.au",
+    siteUrl: "https://mainlymobiles.com.au",
     image: "/images/mmc.png",
   },
   plugins: [
@@ -33,5 +33,19 @@ module.exports = {
         icon: "src/images/mmc.png",
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        serialize: ({ path }) => {
+          return {
+            url: path,
+            lastmod: new Date().toISOString(), // currently treat all pages as updated when a new build completed
+            changefreq: `daily`,
+            priority: 0.9,
+          };
+        },
+      },
+    },
+    "gatsby-plugin-robots-txt",
   ],
 };

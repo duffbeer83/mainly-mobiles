@@ -77,7 +77,7 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         defaultKeywords: keywords
-        siteUrl: url
+        siteUrl
         defaultImage: image
       }
     }
