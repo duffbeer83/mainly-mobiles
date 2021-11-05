@@ -1,4 +1,4 @@
-## Mainly Mobiles
+# Mainly Mobiles
 
 [Mainly Mobile Communications](https://mainlymobiles.com.au) gatsby site definition.
 
