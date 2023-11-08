@@ -4,7 +4,9 @@
 
 Currently this repository contains all structure and content for the MMC website.
 
-Builds via [Gatsby Cloud](https://www.gatsbyjs.com/dashboard/586c5021-2bd0-4e97-840a-f545c1788a52/sites/e3203dd1-fb41-412b-94ba-da447fd006d8/deploys) are triggered from commits to the branch `main`
+Built via GitHub actions (upon commit to main), and published to the 'release' branch which is hosted on GitHub Pages.
+
+Note, this build tool requires Node v14 to operate correctly.
 
 ## Future Development
 
